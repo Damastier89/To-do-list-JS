@@ -95,7 +95,7 @@ const tasks = [{
             '--input-focus-box-shadow': '0 0 0 0.2rem rgba(141, 143, 146, 0.25)',
         },
     };
-    let lastSelectedTheme = localStorage.setItem('app_theme') || 'default';
+    let lastSelectedTheme = localStorage.getItem('app_theme') || 'default';
 
 
     //! Elements UI

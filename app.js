@@ -114,7 +114,7 @@ const tasks = [{
 
     function renderAllTasks(taskslist) {
         if (!taskslist) {
-            console.error('Передайте список задач');
+            console.error('Fill in all fields!');
             return;
         }
 
@@ -160,7 +160,7 @@ const tasks = [{
         const bodyValue = inputBody.value;
 
         if (!titleValue || !bodyValue) {
-            alert('Пожалуйста заполните форму');
+            alert('Please fill out the form');
             return;
         }
         const task = createNewTask(titleValue, bodyValue);
@@ -187,7 +187,7 @@ const tasks = [{
         const {
             title
         } = objofTasks[id]
-        const isConfirm = confirm(`Вы уверены что хотите удалить задачу: ${title}?`);
+        const isConfirm = confirm(`Are you sure you want to delete this task: ${title}?`);
         if (!isConfirm) return isConfirm;
         delete objofTasks[id];
         return isConfirm;
